@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>Pangya_LoginServer.LoginServer</StartupObject>
+    <BaseOutputPath>..\Build\LoginServer</BaseOutputPath>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <PackAsTool>False</PackAsTool>
+    <AssemblyName>LoginServer</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants);DEFAULT_DB;US;LS_x64</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <DefineConstants>$(DefineConstants);DEFAULT_DB;US;LS_x64</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <DefineConstants>$(DefineConstants);DEFAULT_DB;US;LS_x64</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PangyaAPI\PangyaAPI.IFF.BR.S2\PangyaAPI.IFF.BR.S2.csproj" />
+    <ProjectReference Include="..\PangyaAPI\PangyaAPI.Network\PangyaAPI.Network.csproj" />
+    <ProjectReference Include="..\PangyaAPI\PangyaAPI.SQL\PangyaAPI.SQL.csproj" />
+    <ProjectReference Include="..\PangyaAPI\PangyaAPI.Utilities\PangyaAPI.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup> 
+    <None Update="config\socket_config.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="server.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

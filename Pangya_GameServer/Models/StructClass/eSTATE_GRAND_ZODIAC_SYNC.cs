@@ -1,0 +1,12 @@
+namespace Pangya_GameServer.Models;
+
+public enum eSTATE_GRAND_ZODIAC_SYNC : byte
+{
+	LOAD_HOLE,
+	LOAD_CHAR_INTRO,
+	FIRST_HOLE,
+	START_GOLDEN_BEAM,
+	END_GOLDEN_BEAM,
+	END_SHOT,
+	WAIT_END_GAME
+}

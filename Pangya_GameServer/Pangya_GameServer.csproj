@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <StartupObject>Pangya_GameServer.GameServer</StartupObject>
+    <BaseOutputPath>..\Build\GameServer</BaseOutputPath>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+    <PackAsTool>False</PackAsTool>
+    <AssemblyName>GameServer</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PangyaAPI\PangyaAPI.IFF.BR.S2\PangyaAPI.IFF.BR.S2.csproj" />
+    <ProjectReference Include="..\PangyaAPI\PangyaAPI.Network\PangyaAPI.Network.csproj" />
+    <ProjectReference Include="..\PangyaAPI\PangyaAPI.SQL\PangyaAPI.SQL.csproj" />
+    <ProjectReference Include="..\PangyaAPI\PangyaAPI.Utilities\PangyaAPI.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup> 
+    <None Update="config\socket_config.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="server.ini">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Game\" />
+  </ItemGroup>
+
+</Project>

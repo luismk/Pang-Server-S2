@@ -1,0 +1,10 @@
+namespace Pangya_GameServer.Models;
+
+public enum eGRAND_ZODIAC_TYPE_SHOT : byte
+{
+	GZTS_HIO_SCORE = 1,
+	GZTS_FIRST_SHOT,
+	GZTS_SPECIAL_SHOT,
+	GZTS_WITHOUT_COMMANDS,
+	GZTS_MISS_PANGYA
+}

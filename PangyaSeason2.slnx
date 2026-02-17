@@ -1,0 +1,28 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="PangyaAPI/PangyaAPI.IFF.BR.S2/PangyaAPI.IFF.BR.S2.csproj" Id="03210c5a-2661-4bb2-b3b5-c49603e422f3" />
+  <Project Path="PangyaAPI/PangyaAPI.Network/PangyaAPI.Network.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="PangyaAPI/PangyaAPI.SQL/PangyaAPI.SQL.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="PangyaAPI/PangyaAPI.Utilities/PangyaAPI.Utilities.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="Pangya_LoginServer/Pangya_LoginServer.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+  <Project Path="Pangya_GameServer/Pangya_GameServer.csproj">
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+  </Project>
+</Solution>

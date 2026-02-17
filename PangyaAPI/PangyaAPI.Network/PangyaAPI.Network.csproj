@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PangyaAPI.IFF.BR.S2\PangyaAPI.IFF.BR.S2.csproj" />
+    <ProjectReference Include="..\PangyaAPI.SQL\PangyaAPI.SQL.csproj" />
+    <ProjectReference Include="..\PangyaAPI.Utilities\PangyaAPI.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>
